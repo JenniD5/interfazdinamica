@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Controldeusuario_nuevo.alumno"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Controldeusuario_nuevo"
+             mc:Ignorable="d" Height="174.8" Width="315">
+    <Grid Margin="0,0,14.8,0.4">
+        <TextBox x:Name="txtnombreal" HorizontalAlignment="Left" Height="23" Margin="130,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="lblnombreal" HorizontalAlignment="Left" Margin="20,15,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top" Height="35" Width="105"/>
+        <TextBlock x:Name="lblmatricula" HorizontalAlignment="Left" Margin="15,70,0,0" TextWrapping="Wrap" Text="Matricula" VerticalAlignment="Top" Height="35" Width="105"/>
+        <TextBlock x:Name="lblprepa" HorizontalAlignment="Left" Margin="20,125,0,0" TextWrapping="Wrap" Text="Preparatoria" VerticalAlignment="Top" Height="35" Width="105"/>
+        <TextBox x:Name="txtmatriculaal" HorizontalAlignment="Left" Height="23" Margin="130,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtprepa" HorizontalAlignment="Left" Height="23" Margin="130,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</UserControl>

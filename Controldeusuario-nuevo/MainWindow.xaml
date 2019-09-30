@@ -1,0 +1,21 @@
+﻿<Window x:Class="Controldeusuario_nuevo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Controldeusuario_nuevo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="516.4" Width="808.2">
+    <Grid x:Name="nuevo">
+        <TextBlock HorizontalAlignment="Left" Margin="25,20,0,0" TextWrapping="Wrap" Text="NUEVO " VerticalAlignment="Top" Height="45" Width="110"/>
+        <Grid x:Name="gridprincipal" HorizontalAlignment="Left" Height="275" Margin="50,140,0,0" VerticalAlignment="Top" Width="705"/>
+        <Button x:Name="btnagregar" Content="Agregar" HorizontalAlignment="Left" Margin="410,20,0,0" VerticalAlignment="Top" Width="130" Height="30" Click="Btnagregar_Click"/>
+        <ComboBox x:Name="cbnuevos" HorizontalAlignment="Left" Margin="148,25,0,0" VerticalAlignment="Top" Width="132" RenderTransformOrigin="0.5,0.5" Height="45" SelectionChanged="Cbnuevos_SelectionChanged">
+            <ComboBoxItem>Alumno</ComboBoxItem>
+            <ComboBoxItem>Maestro</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="btnguardar" Content="Guardar" HorizontalAlignment="Left" Margin="180,435,0,0" VerticalAlignment="Top" Width="110" Height="35" Click="Btnguardar_Click" Visibility="Hidden"/>
+        <Button x:Name="btncancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="470,435,0,0" VerticalAlignment="Top" Width="110" Height="35" Click="Btncancelar_Click" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
