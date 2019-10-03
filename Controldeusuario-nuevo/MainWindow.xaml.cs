@@ -35,14 +35,21 @@ namespace Controldeusuario_nuevo
 
         private void Cbnuevos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
             gridprincipal.Children.Clear();
             switch (cbnuevos.SelectedIndex)
             {
                 case 0:
                     gridprincipal.Children.Add(new alumno());
+
+                    btnguardar.Visibility = Visibility.Hidden;
+                    btncancelar.Visibility = Visibility.Hidden;
+
                     break;
                 case 1:
                     gridprincipal.Children.Add(new Maestro());
+                    btnguardar.Visibility = Visibility.Hidden;
+                    btncancelar.Visibility = Visibility.Hidden;
                     break;
                 default:
                     break;
@@ -75,7 +82,27 @@ namespace Controldeusuario_nuevo
 
         private void Btnguardar_Click(object sender, RoutedEventArgs e)
         {
+            btnguardar.Visibility = Visibility.Hidden;
+            btncancelar.Visibility = Visibility.Hidden;
 
+            switch (cbnuevos.SelectedIndex)
+            {
+                case 0:
+                    ((alumno)(gridprincipal.Children[0])).txtmatriculaal.Text = "";
+                    ((alumno)(gridprincipal.Children[0])).txtnombreal.Text = "";
+                    ((alumno)(gridprincipal.Children[0])).txtprepa.Text = "";
+                    break;
+                case 1:
+                    ((Maestro)(gridprincipal.Children[0])).txtcodigo.Text = "";
+                    ((Maestro)(gridprincipal.Children[0])).txtmateria.Text = "";
+                    ((Maestro)(gridprincipal.Children[0])).txtnombre.Text = "";
+                    ((Maestro)(gridprincipal.Children[0])).txttituo.Text = "";
+
+                    gridprincipal.Children.Add(new Maestro());
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
